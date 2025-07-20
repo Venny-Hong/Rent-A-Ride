@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dodge Charger R/T
+* source:	https://sketchfab.com/3d-models/dodge-charger-rt-acd309e99b6144a2b10b389ea94e06c9
+* author:	Caio de Oliveira (https://sketchfab.com/caio17011)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dodge Charger R/T" (https://sketchfab.com/3d-models/dodge-charger-rt-acd309e99b6144a2b10b389ea94e06c9) by Caio de Oliveira (https://sketchfab.com/caio17011) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

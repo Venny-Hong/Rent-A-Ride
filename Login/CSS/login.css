@@ -1,0 +1,307 @@
+body{
+    margin: 0px;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    /* box-shadow: -8px 8px 17px 0px gray; */
+    position: absolute;
+    /* border: 2px solid; */
+}
+
+/* Login and Register */
+.c1,.c2{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -8px 8px 20px 0px rgb(61, 61, 61);
+    flex-direction: column;
+    border-radius: 10px;
+    width: 391px;
+    height: 435px;
+    border: 2px solid black;
+    
+}
+/* Register */
+.c2{
+    transform: scale(0.6,0.6);
+    box-shadow: 8px 8px 20px 0px rgb(61, 61, 61);
+}
+/* Flap */
+.c3{
+    width: 391px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 435px;
+    position: absolute;
+    /* background:linear-gradient(black,rgb(61, 60, 60)); */
+    position: absolute;
+    z-index: 3;
+    margin-left: 392px;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+    
+}
+/* Flap button */
+#btn{
+    font-size: 14px;
+    padding: 10px;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    color: white;
+    font-style: normal;
+    /* box-shadow: -3px 3px 5px 0px gray; */
+    font-family: Righteous;
+     /* position: absolute; */
+    bottom: 0;
+    /* left: 144px;  */
+    z-index: 11 ;
+}
+/* Forms */
+form{
+    align-items: center;
+    display: flex;
+    background-color:rgb(233, 233, 233);
+    justify-content: center;
+    flex-direction: column;
+}
+/* Icons */
+.icon{
+    padding-left: 13px;
+    padding-top: 8px;
+    padding-right: 16px;
+    border-top-left-radius: 6px;
+    color: white;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+/* input div  Login and regis*/
+.col, .col1 {
+    display: flex;
+    position: relative;
+    margin: 7px;
+    height: 56px;
+    flex-direction: column;
+}
+input.login,input.regis{
+    /* margin: 12px; */
+    /* margin-left: 84px; */
+    padding: 5px;
+    font-size: 14px;
+    background: white;
+    border-top: 2.5px solid black;
+    border-right: 1px solid black;
+    border-left: 0px solid black;
+    border-top-right-radius: 6px;
+    /* border-top-left-radius:6 ;  */
+	width: 202px;
+	height: 30;
+	letter-spacing: 1px;
+	outline: 0;
+	font-family: Arial, sans-serif;
+}
+input.login ~ .lg,input.regis ~ .lg{
+    position: absolute;
+	bottom: 21px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background-color: black;
+	transition: 1s;
+}
+input.login:focus ~ .lg,input.regis:focus ~ .lg{
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* Label */
+.h22{
+    color: black;
+    font-size: 28px;
+    background-color: transparent;
+    margin-bottom: 28px;
+    font-family: Righteous;
+}
+
+/* Login button */
+#log,#reg{
+    box-shadow: -3px 5px 13px 0px gray;
+    border-radius: 6px;
+    width: auto;
+    /* height: 30px; */
+    margin: 16px;
+    font-size: 16px;
+    padding: 7px;
+    font-family: Righteous;
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+#log:hover,#reg:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+}
+#col2{
+
+    width: 285px;
+    position: absolute;
+    transform: skewX(35deg);
+    height: 433px;
+    background-color: rgb(0 0 0 / 43%);
+    z-index: -1;
+}
+#col3{
+    width: 285px;
+    position: absolute;
+    transform: skewX(35deg) translateX(510px);
+    height: 700px;
+    background-color: rgb(0 0 0 / 43%);
+    z-index: -1;
+}
+#col4,#col5{
+    width: 237px;
+    position: absolute;
+    height: 237px;
+    padding-bottom: 60px;
+    background-color:transparent;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#col5{
+    transform: translateX(-500px);
+}
+h3{
+    color: white;
+    font-size: 28px;
+    background-color: transparent;
+    margin-bottom: 28px;
+}
+/*Input div*/
+.input_div{
+    display: flex;
+}
+/* p{
+    color: red;
+} */
+#close{
+    position: absolute;
+    top: 25px;
+    background-color: white;
+    color: black;
+    /* border: 1px solid black ; */
+    padding: 2px 3px;
+    font-size:25px;
+    cursor: pointer;
+    right: 45px;
+}
+#bg{
+    height: 98%;
+    width: 99%;
+    background-size: cover;
+    filter: brightness(20%);
+    z-index: -1;
+    position: absolute;
+    opacity: 85%;
+}
+#bg img{
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fadeinout 5s infinite;
+    animation: fadeinout 5s infinite;
+}
+/* @-webkit-keyframes fadeinout{
+    0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes fadeinout {
+    0%,100% { opacity:0; }
+    50% { opacity: 1; }
+} */
+#logo{
+    height: 68px;
+    margin: -70px;
+    /* padding: 0px; */
+}
+
+#error{
+    color: red;
+    font-size: 20px;
+    font-style: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: 90px;
+    background-color: white;
+}
+
+#inserted{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    z-index: 20;
+    border: 2px solid;
+    border-radius: 10px;
+    font-family: 'Lobster',cursive;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: -1px 1px 9px 5px rgb(100, 99, 99);
+}
+#in_bg{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 15;
+    opacity: 80%;
+    position: absolute;
+}
+
+#go_home{
+    margin-bottom: 10px;
+    width: 7vw;
+    /* height: 7vh; */
+    color: white;
+    background-color: black;
+    border: 2px solid;
+    border-radius: 16px;
+    font-size: 16px;
+    font-style: bold;
+    padding: 9px;
+    font-family: 'Righteous';
+    
+}
+
+#go_home:hover{
+    transition: all 0.5s;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: -1px 1px 9px 1px black;
+}

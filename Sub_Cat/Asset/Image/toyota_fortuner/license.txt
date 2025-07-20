@@ -1,0 +1,11 @@
+Model Information:
+* title:	Toyota Fortuner
+* source:	https://sketchfab.com/3d-models/toyota-fortuner-1bcbcf9bd9bd4ff08e94345eded9e541
+* author:	vr_creators (https://sketchfab.com/vr_creator07)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toyota Fortuner" (https://sketchfab.com/3d-models/toyota-fortuner-1bcbcf9bd9bd4ff08e94345eded9e541) by vr_creators (https://sketchfab.com/vr_creator07) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

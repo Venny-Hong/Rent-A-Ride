@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="CSS/cat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <title>Rent-A-Ride</title>
+    <script src="JS/cat.js"></script>
+    <script src="../Asset/JS/script.js" defer></script>
+</head>
+<body onload="on_loadcat()">
+
+    <div id="contains">
+        <div>
+            <div id="back"> 
+                <!-- Naivigation Bar -->
+                <div class="navigation-bar">
+                    <nav>
+                    <a href=""><img src="../Asset/Image/logo.png" class="logo" id="logoup"></a>
+                        <ul id="sidemenu">
+                            <!-- <li><a href="#" onclick="filt()">Vehicles</a></li> -->
+                            <li><a href="../index.html" onclick="closemenu()">Home</a></li>
+                            <li><a href="#" onclick="closemenu()">About</a></li>
+                            <li><a href="../Category/category.html" onclick="closemenu()">Categories</a></li>
+                            <li><a href="../logregis.php" onclick="log()" id="lr">Login/Register</a></li>
+                            <i class='bx bx-message-square-x' onclick="closemenu()"></i>
+                        </ul>
+                        <i class='bx bx-menu' id="open" onclick="openmenu()"></i>
+                    </nav>
+                </div>
+            
+                <center>
+                    <!-- Slide Show -->
+                    <div class="container">
+                        <button onclick="left(380)" id="leftb"><i class="fa fa-arrow-left" ></i></button>
+                        <div class="cont_slide">
+                        <div class="slider" id="slideshow">
+                            <div class="slides" id="suv_s" >
+                            <img src="IMG/Suv.jpg" alt="">
+                            </div>
+                            <div class="slides" id="sedan_s" >
+                            <img src="IMG/Sedan.jpg" alt="">
+                            </div>
+                            <div class="slides" id="sports_s" >
+                            <img src="IMG/Sports.jpg" alt="">
+                            </div>
+                            <div class="slides" id="muscle_s" >
+                            <img src="IMG/Muscle.jpg" alt="">
+                            </div>
+                            <div class="slides" id="luxury_s" >
+                            <img src="IMG/Luxury.jpg" alt="">
+                            </div>
+                        </div>
+                        </div>
+                        <button onclick="right(-380)" id="rightb"><i class="fa fa-arrow-right" ></i></button>
+                        <!-- <i class="fa fa-arrow-right" id="rightb" onclick="right(-380)" ></i> -->
+                    </div>
+                </center>
+                <center>
+                    <hr style="width: 90%; border-width: 2px; margin-top: -35px;"><br><br>
+                    <!-- Categories -->
+                    <!-- <hr style="width: 90%; border-width:2px; margin-top: -35px;"><br><br>  -->
+                    <font style="font-family: 'Lobster', cursive; font-size: 60px;">
+                    Categories
+                    </font><br><br>
+                </center>
+                
+                <div class="cat" id="cat">
+                    <a href="SUV/SUV.html">
+                    <div class="cat_type" id="suv" onmouseenter="me('c1')" onmouseleave="ml('c1')">
+                        <div class="cat_image">
+                            <img src="IMG/Suv.jpg" alt="suv" >
+                        </div>
+                        <div class="cat_dt" >
+                            <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c1">
+                                Suv
+                            </font>
+                            <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                            </div>
+                            <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:10px;">
+                                SUV stands for 'Sports Utility Vehicle', a fairly loose term but one that generally refers to stylish, sleek looking vehicles that offer elegant city driving thanks to a typical 4x4 capability.
+                            </font>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Sport/sports.html">
+                    <div class="cat_type" id="sports" onmouseenter="me('c2')" onmouseleave="ml('c2')">
+                        <div class="cat_image">
+                            <img src="IMG/Sports.jpg" alt="sports" >
+                        </div>
+                        <div class="cat_dt" >
+                            <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c2">
+                                Sports
+                            </font>
+                            <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                            </div>
+                            <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:10px;">
+                                A sports car is a car designed with an emphasis on dynamic performance, such as handling, acceleration, top speed, the thrill of driving and racing capability. Sports cars originated in Europe in early 1902 and are currently produced by many manufacturers around the world.
+
+                            </font>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Muscle/Muscles.html">
+                    <div class="cat_type" id="muscle" onmouseenter="me('c3')" onmouseleave="ml('c3')">
+                        <div class="cat_image">
+                            <img src="IMG/Muscle.jpg" alt="muscle" >
+                        </div>
+                        <div class="cat_dt">
+                            <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c3">
+                                Muscle
+                            </font>
+                            <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                            </div>
+
+                            <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:10px;">
+                                Muscle car is a description according to Merriam-Webster Dictionary that came to use in 1966 for "a group of American-made two-door sports coupes with powerful engines designed for high-performance driving.
+                            </font>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Luxury/Luxury.html">
+                    <div class="cat_type" id="luxury" onmouseenter="me('c4')" onmouseleave="ml('c4')">
+                        <div class="cat_image">
+                            <img src="IMG/Luxury.jpg" alt="luxury" >
+                        </div>
+                        <div class="cat_dt">
+                            <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c4">
+                                Luxury
+                            </font>
+                            <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                            </div>
+                            <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:10px;">
+                                A luxury car is a car that provides above-average to high-end levels of comfort, features, and equipment. Often more expensive materials and surface finishes are used, and buyers expect better build quality.
+                            </font>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="Sedan/Sedan.html">
+                    <div class="cat_type" id="sedan" style="transform: translateX(20em);" onmouseenter="me('c5')" onmouseleave="ml('c5')">
+                        <div class="cat_image">
+                            <img src="IMG/Sedan.jpg" alt="sedan" >
+                        </div>
+                        <div class="cat_dt">
+                            <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c5">
+                                Sedan
+                            </font>
+                            <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                            </div>
+                            <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:10px;">
+                                A sedan is defined as a 4-door passenger car with a trunk that is separate from the passengers with a three-box body: the engine, the area for passengers, and the trunk. Throughout the generations, the definition of a sedan has been the same.
+                            </font>
+                        </div>
+                    </div>
+                    </a>
+
+                </div>
+
+                <!-- Footer -->
+                <!-- <br><br> -->
+                <footer>
+                    <table>
+                        <tbody>
+                        <td><a href="#"><img src="IMG/logo.png" class="logo" id="f_logo" style="height: 55px;margin-left: 10px;"></a></td>
+                        <td><a href="#"><b>Copyright<i class='bx bx-copyright'></i> 2023-2024 Rent-A-Ride,Inc</b></a></td>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-twitter" style="font-size: 22px;"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" style="font-size: 22px;"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google" style="font-size: 22px;"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" style="font-size: 22px;"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a></li>
+                    </ul>
+                </footer>
+            
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

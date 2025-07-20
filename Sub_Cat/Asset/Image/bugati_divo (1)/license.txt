@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bugati Divo
+* source:	https://sketchfab.com/3d-models/bugati-divo-dca375fefc65461d8a383172b235d0a9
+* author:	Jonrss (https://sketchfab.com/huy14320000006)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bugati Divo" (https://sketchfab.com/3d-models/bugati-divo-dca375fefc65461d8a383172b235d0a9) by Jonrss (https://sketchfab.com/huy14320000006) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Renault Duster
+* source:	https://sketchfab.com/3d-models/renault-duster-a253d913f99d4611860e8dd955c476d7
+* author:	ANDREO12 (https://sketchfab.com/ANDREO12)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Renault Duster" (https://sketchfab.com/3d-models/renault-duster-a253d913f99d4611860e8dd955c476d7) by ANDREO12 (https://sketchfab.com/ANDREO12) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

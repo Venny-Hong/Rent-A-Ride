@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="Asset/CSS/cards.css">
+    <link rel="stylesheet" href="Asset/CSS/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <title>Rent-A-Ride</title>
+    <script src="Asset/JS/script1.js"></script>
+    <script src="Asset/JS/cards.js" defer></script>
+    <script src="Asset/JS/script.js" defer ></script>
+</head>
+<body onload="on_loadhome()">  
+   
+<div id="contains">
+    <div>
+        <div id="back">
+             <!-- Naivigation Bar -->
+            <div class="navigation-bar">
+                <nav>
+                   <a href=""><img src="Asset/Image/logo.png" class="logo" id="logoup"></a>
+                    <ul id="sidemenu">
+                        <li><a href="#" onclick="filt()">Vehicles</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="About_us/about.html" onclick="closemenu()">About</a></li>
+                        <li><a href="Category/category.html" onclick="closemenu()">Categories</a></li>
+                        <li><a href="logregis.php" onclick="log()" id="lr">Login/Register</a></li>
+                        <i class='bx bx-message-square-x' onclick="closemenu()"></i>
+                    </ul>
+                    <i class='bx bx-menu' id="open" onclick="openmenu()"></i>
+                </nav>
+            </div>
+
+            <!-- video --> 
+            <div class="home_vid">
+                <video autoplay loop>
+                    <source src="Asset/Image/CSS_Home_Page.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- 3d-model -->
+            <div class="model-3d">
+                <div class="leftside">
+                    <font id="head">
+                        Welcome to <br>Rent-A-Ride !
+                    </font><br><br>
+                    <font id="descrip">
+                        Whether you're embarking on a cross-country road trip, need a stylish car for a special occasion, or simply require a reliable vehicle for your daily commute, we've got you covered. Explore the open road with confidence, knowing that Rent A Ride is your trusted partner in transportation. 
+                        <br><br><br>
+                        <a href="About_us/about.html" style="color: black;"><u>Read More -></u></a>
+                    </font>
+                </div>
+                <div class="rightside" align="center">
+                    <font style="font-family: 'Lobster', cursive; font-size: 50px;">
+                        <model-viewer src="Asset/Image/Car2/scene.gltf" alt="3D model loading Failed" shadow-softness="1" shadow-intensity="4" camera-orbit="60deg 70deg 69%" auto-rotate camera-controls ar ios-src="Asset/Image/Car2/scene.gltf">
+                        </model-viewer>
+                    </font><br>
+                </div>
+            </div>
+
+            <hr style="width: 90%; border-width: 2px; margin-top: -35px;"><br><br>
+
+            <!-- Latest Cars -->
+            <font id="lc">
+                Latest Cars...
+            </font>
+            <br><br>
+            <center>
+                <div style="position: relative; width: 90%;">
+                    
+                        <div class="wrapper" id="wrapper">
+                            <i onclick="scrolling('left')" class="fa fa-arrow-left"></i>
+                            <ul class="carousel" id="slideshow" onmousedown="dragstart(event)">
+                            <a href="Sub_Cat/duster.html">
+                                <li class="card" id="card">
+                                    <div class="img"><img src="./Asset/Image/renault.jpg" alt="img" draggable="false"></div>
+                                    <h2>Renault Duster</h2>
+                                    <span>Mileage : 14.3kmpl<br>
+                                        Model Year : 2019<br>
+                                        Type : SUV</span>
+                                </li>
+                            </a>
+                            <a href="Sub_Cat/m4.html">
+                                <li class="card">
+                                    <div class="img"><img src="./Asset/Image/bmw.jpg" alt="img" draggable="false"></div>
+                                    <h2>BMW M4</h2>
+                                    <span>Mileage : 9.76kmpl<br>
+                                        Model Year : 2021<br>
+                                        Type : Sedan</span>
+                                </li>
+                            </a>
+                            <a href="Sub_Cat/swift.html">
+                                <li class="card">
+                                    <div class="img"><img src="Asset/Image/swift.jpg" alt="img" draggable="false"></div>
+                                    <h2>Suzuki Swift</h2>
+                                    <span>Mileage : 22.56kmpl<br>
+                                        Model Year : 2021<br>
+                                        Type : Sedan</span>
+                                </li>
+                            </a>
+                            <a href="Sub_Cat/fortuner.html">
+                                <li class="card">
+                                    <div class="img"><img src="Asset/Image/toyota-fortuner.jpg" alt="img" draggable="false"></div>
+                                    <h2>Toyota Fortuner</h2>
+                                    <span>Mileage : 10.3kmpl<br>
+                                    Model Year : 2021<br>
+                                    Type : SUV</span>
+                                </li>
+                            </a>
+                            <a href="Sub_Cat/divo.html">
+                                <li class="card">
+                                    <div class="img"><img src="Asset/Image/bugati-divo.jpg" alt="img" draggable="false"></div>
+                                    <h2>Bugati Divo</h2>
+                                    <span>Mileage : 4kmpl<br>
+                                        Model Year : 2021<br>
+                                        Type : Sport</span>
+                                </li>
+                            </a>
+                            <a href="Sub_Cat/eclass.html">
+                                <li class="card">
+                                    <div class="img"><img src="Asset/Image/mercedes-e.jpg" alt="img" draggable="false"></div>
+                                    <h2>Mercedes E-Class</h2>
+                                    <span>Mileage : 16.1kmpl<br>
+                                        Model Year : 2019<br>
+                                        Type : Luxury</span>
+                                </li>
+                            </a>
+                            </ul>
+                            <i onclick="scrolling('right')" class="fa fa-arrow-right"></i>
+                        </div>
+                </div>
+            </center>
+
+            <!-- Footer -->
+            <br><br>
+            <footer>
+                <table>
+                    <tbody>
+                    <td><a href="#"><img src="Asset/Image/logo.png" class="logo" id="f_logo" style="height: 55px;margin-left: 10px;"></a></td>
+                    <td><a href="#"><b>Copyright<i class='bx bx-copyright'></i> 2023-2024 Rent-A-Ride,Inc</b></a></td>
+                    </tbody>
+                </table>
+                <ul>
+                    <li><a href="#"><i class="fa fa-twitter" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    
+    <div id="filterr">
+        <div id="container">
+            <div id="blurr"></div>
+            <i class="fa fa-close" id="close" onclick="backk()"></i>
+            <div class="fill_cont">
+                <div class="fill_controls">
+                    <input type="text" id="name" name="Name" placeholder="Car Name" onkeyup="filterFunction()">
+                    <select id="fselect" onchange="myfunction()">
+                        <option value="0">Car Name</option>
+                        <option value="1">Location</option>
+                        <option value="2">Car Type</option>
+                    </select>
+                </div>
+                <div class="rowd" id="rowd"> 
+                    <div class="colsd" onmouseenter="me('c1')" onmouseleave="ml('c1')">
+                        <a href="Sub_Cat/shellbgt650.html">
+                        <img src="Category/IMG/ford1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c1" class="Car Name">Ford Mustang Shelby</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c2')" onmouseleave="ml('c2')">
+                        <a href="Sub_cat/innova.html">
+                        <img src="Category/IMG/innova2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c2" class="Car Name">Innova Zenix</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c3')" onmouseleave="ml('c3')">
+                        <a href="Sub_cat/gtrs.html">
+                        <img src="Category/IMG/gtr2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c3" class="Car Name">Nissan GTR</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c4')" onmouseleave="ml('c4')">
+                        <a href="Sub_cat/porsche911.html">
+                        <img src="Category/IMG/porche1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c4" class="Car Name"> Porche 911</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c5')" onmouseleave="ml('c5')">
+                        <a href="Sub_cat/supra.html">
+                        <img src="Category/IMG/supra1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c5" class="Car Name">Toyota Supra</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c6')" onmouseleave="ml('c6')">
+                        <a href="Sub_cat/a8.html">
+                        <img src="Category/IMG/audi1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c6" class="Car Name">Audi A8</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c7')" onmouseleave="ml('c7')">
+                        <a href="Sub_cat/m4.html">
+                        <img src="Category/IMG/bmw1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c7" class="Car Name">BMW M4</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c8')" onmouseleave="ml('c8')">
+                        <a href="Sub_cat/divo.html">
+                        <img src="Category/IMG/bugatidivo1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c8" class="Car Name">Bugati Divo</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c9')" onmouseleave="ml('c9')">
+                        <a href="Sub_cat/corvette.html">
+                        <img src="Category/IMG/chervolet1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c9" class="Car Name">Chervolet Corvette</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c10')" onmouseleave="ml('c10')">
+                        <a href="Sub_cat/civic.html">
+                        <img src="Category/IMG/civic2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c10" class="Car Name">Honda Civic</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c11')" onmouseleave="ml('c11')">
+                        <a href="Sub_cat/challenger.html">
+                        <img src="Category/IMG/dodge1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c11" class="Car Name">Dodge Challenger</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c12')" onmouseleave="ml('c12')">
+                        <a href="Sub_cat/duster.html">
+                        <img src="Category/IMG/duster1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c12" class="Car Name">Renault Duster</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c13')" onmouseleave="ml('c13')">
+                        <a href="Sub_cat/fortuner.html">
+                        <img src="Category/IMG/fortuner1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c13" class="Car Name">Toyota Fortuner</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c14')" onmouseleave="ml('c14')">
+                        <a href="Sub_cat/lc500.html">
+                        <img src="Category/IMG/lexus1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c14" class="Car Name">Lexus LC 500</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c15')" onmouseleave="ml('c15')">
+                        <a href="Sub_cat/urus.html">
+                        <img src="Category/IMG/lombor2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c15" class="Car Name">Lomborghini Urus</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c16')" onmouseleave="ml('c16')">
+                        <a href="Sub_cat/eclass.html">
+                        <img src="Category/IMG/mercedesec.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c16" class="Car Name">Mercedes E-Class</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c17')" onmouseleave="ml('c17')">
+                        <a href="Sub_cat/phantom.html">
+                        <img src="Category/IMG/roll2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c17" class="Car Name">Rolls Royce Phantom</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c18')" onmouseleave="ml('c18')">
+                        <a href="Sub_cat/thar.html">
+                        <img src="Category/IMG/thar1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c18" class="Car Name">Thar 4x4</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c19')" onmouseleave="ml('c19')">
+                        <a href="Sub_cat/swift.html">
+                        <img src="Category/IMG/swift1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c19" class="Car Name">Suzuki Swift</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c20')" onmouseleave="ml('c20')">
+                        <a href="Sub_cat/mustang1965.html">
+                        <img src="Category/IMG/mustang1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c20" class="Car Name">Ford Mustang 1965</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

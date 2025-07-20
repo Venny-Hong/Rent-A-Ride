@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="CSS/muscle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <title>Rent-A-Ride</title>
+    <script src="JS/muscle.js"></script>
+    <script src="JS/script.js" defer></script>
+</head>
+<body onload="on_loadmus()">  
+    <!-- Naivigation Bar -->
+<div id="contains">
+    <div class="navigation-bar">
+        <nav>
+            <a href=""><img src="IMG/logo.png" class="logo" id="logoup"></a>
+            <ul id="sidemenu">
+                <li><a href="../../index.html" onclick="closemenu()">Home</a></li>
+                <li><a href="../../About_us/about.html" onclick="closemenu()">About</a></li>
+                <li><a href="../category.html" onclick="closemenu()">Categories</a></li>
+                <li><a href="../../logregis.php" onclick="log()" id="lr">Login/Register</a></li>
+                <i class='bx bx-message-square-x' onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' id="open" onclick="openmenu()"></i>
+        </nav>
+    </div>
+        
+        <center>
+             <!-- Slide Show -->
+            <div class="container">
+                <button onclick="left(380)" id="leftb"><i class="fa fa-arrow-left" ></i></button>
+                <div class="cont_slide">
+                <div class="slider" id="slideshow">
+                     <div class="slides" id="suv_s" >
+                    <img src="IMG/ford.jpg" alt="">
+                    </div>
+                    <div class="slides" id="sedan_s" >
+                    <img src="IMG/mustang2.jpg" alt="">
+                    </div>
+                    <div class="slides" id="sports_s" >
+                    <img src="IMG/chervolet1.jpg" alt="">
+                    </div>
+                    <div class="slides" id="muscle_s" >
+                    <img src="IMG/dodge1.jpg" alt="">
+                    </div>
+                    <div class="slides" id="luxury_s" >
+                    <!-- <img src="IMG/challenger.jpg" alt=""> -->
+                    </div>
+                </div>
+                </div>
+                <button onclick="right(-380)" id="rightb"><i class="fa fa-arrow-right" ></i></button>
+                <!-- <i class="fa fa-arrow-right" id="rightb" onclick="right(-380)" ></i> -->
+            </div>
+        </center>
+        <center>
+            <hr style="width: 90%; border-width: 2px; margin-top: -35px;"><br><br>
+             <!-- Categories -->
+             <!-- <hr style="width: 90%; border-width:2px; margin-top: -35px;"><br><br>  -->
+            <font style="font-family: 'Lobster', cursive; font-size: 60px;">
+               Muscle Cars
+            </font><br><br>
+        </center>
+            <div class="cat" id="cat">
+                <div class="cat_type" id="Shelby" onmouseenter="me('c1')" onmouseleave="ml('c1')">
+                    <div class="cat_image">
+                        <img src="IMG/ford1.jpg" alt="Shelby" >
+                    </div>
+                    <div class="cat_dt" >
+                        <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c1">
+                            Mustang Shelby GT500
+                        </font>
+                        <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <div style="display: grid; grid-template-columns: auto auto; margin: 8px; row-gap: -1px; column-gap: 10px;" >
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; padding: 2px; color: gray;">
+                            Class : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Premium
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Air Condition : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Yes
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Body Style : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Sports
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Transmission : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Automatic
+                        </font>    
+                        </div>  
+                            <hr style="width: 18vw; border-width: 2px; margin-left: 12px;">    
+                        <a href="../../Sub_Cat/shellbgt650.html" ><font style="font-family: 'Righteous', cursive; font-size: 16px; margin:10px;" class="details">
+                            <u>Details</u> 
+                        </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="cat_type" id="Mustang" onmouseenter="me('c2')" onmouseleave="ml('c2')">
+                    <div class="cat_image">
+                        <img src="IMG/mustang1.jpg" alt="Mustang" >
+                    </div>
+                    <div class="cat_dt" >
+                        <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c2">
+                            Ford Mustang 1965
+                        </font>
+                        <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <div style="display: grid; grid-template-columns: auto auto; margin: 8px; row-gap: -1px; column-gap: 10px;" >
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; padding: 2px; color: gray;">
+                            Class : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Premium
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Air Condition : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Yes
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Body Style : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Sports
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Transmission : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Automatic
+                        </font>    
+                        </div>  
+                            <hr style="width: 18vw; border-width: 2px; margin-left: 12px;">    
+                        <a href="../../Sub_Cat/mustang1965.html" ><font style="font-family: 'Righteous', cursive; font-size: 16px; margin:10px;" class="details">
+                            <u>Details</u> 
+                        </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="cat_type" id="Corvette" onmouseenter="me('c3')" onmouseleave="ml('c3')">
+                    <div class="cat_image">
+                        <img src="IMG/chervolet.jpg" alt="Corvette" >
+                    </div>
+                    <div class="cat_dt">
+                        <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c3">
+                            Chevrolet Corvette C7
+                        </font>
+                        <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <div style="display: grid; grid-template-columns: auto auto; margin: 8px; row-gap: -1px; column-gap: 10px;" >
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; padding: 2px; color: gray;">
+                            Class : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Premium
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Air Condition : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Yes
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Body Style : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Sports
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Transmission : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Automatic
+                        </font>    
+                        </div>  
+                            <hr style="width: 18vw; border-width: 2px; margin-left: 12px;">    
+                        <a href="../../Sub_Cat/corvette.html" ><font style="font-family: 'Righteous', cursive; font-size: 16px; margin:10px;" class="details">
+                            <u>Details</u> 
+                        </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="cat_type" id="challenger" onmouseenter="me('c4')" onmouseleave="ml('c4')">
+                    <div class="cat_image">
+                        <img src="IMG/dodge2.jpg" alt="challenger" >
+                    </div>
+                    <div class="cat_dt">
+                        <font style="font-family: 'Righteous', cursive; font-size: 26px; margin: 5px 10px;" id="c4">
+                            Dodge challenger
+                        </font>
+                        <div style="display: flex; flex-direction: row; margin-left: 8px;">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                        </div>
+                        <div style="display: grid; grid-template-columns: auto auto; margin: 8px; row-gap: -1px; column-gap: 10px;" >
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; padding: 2px; color: gray;">
+                            Class : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Premium
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Air Condition : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Yes
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Body Style : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Sports
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px; color: gray;">
+                            Transmission : 
+                        </font>
+                        <font style="font-family: 'Righteous', cursive; font-size: 14px; margin:3px;">
+                            Automatic
+                        </font>    
+                        </div>  
+                            <hr style="width: 18vw; border-width: 2px; margin-left: 12px;">    
+                        <a href="../../Sub_Cat/challenger.html" ><font style="font-family: 'Righteous', cursive; font-size: 16px; margin:10px;" class="details">
+                            <u>Details</u> 
+                        </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    
+        <!-- Footer -->
+            <!-- <br><br> -->
+            <footer>
+                <table>
+                    <tbody>
+                    <td><a href="#"><img src="IMG/logo.png" class="logo" id="f_logo" style="height: 55px;margin-left: 10px;"></a></td>
+                    <td><a href="#"><b>Copyright<i class='bx bx-copyright'></i> 2023-2024 Rent-A-Ride,Inc</b></a></td>
+                    </tbody>
+                </table>
+                <ul>
+                    <li><a href="#"><i class="fa fa-twitter" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" style="font-size: 22px;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a></li>
+                </ul>
+            </footer>
+</div>
+</body>
+
+</html>

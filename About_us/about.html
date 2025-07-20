@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="stylesheet" href="Asset/CSS/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Rent-A-Ride</title>
+    <script src="Asset/JS/about.js" defer></script>
+    <script src="../Asset/JS/script1.js" defer></script>
+    <script src="../Asset/JS/script.js" defer></script>
+</head>
+<body>
+    <!-- Naivigation Bar -->
+    <div class="navigation-bar">
+        <nav>
+           <a href="../index.html"><img src="Asset/Image/logo.png" class="logo" id="logoup"></a>
+            <ul id="sidemenu">
+                <li><a href="#" onclick="filt()">Vehicles</a></li>
+                <li><a href="../index.html" onclick="closemenu()">Home</a></li>
+                <li><a href="#" onclick="closemenu()">About</a></li>
+                <li><a href="../Category/category.html" onclick="closemenu()">Categories</a></li>
+                <li><a href="../logregis.php" onclick="log()" id="lr">Login/Register</a></li>
+                <i class='bx bx-message-square-x' onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' id="open" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div id="intro">
+        <center>"Affordable Wheels, Unforgettable Moments."</center>
+    </div>
+
+    <!-- our mission -->
+    <div class="mission">
+        <div class="leftmission">
+            <font id="head">
+                Our Mission
+            </font><br><br><br>
+            <font id="descrip">
+                Our mission at Rent-A-Ride is to empower our customers with the freedom to explore the world on their own terms. We are dedicated to providing reliable, convenient, and affordable car rental services that meet the diverse needs of our clients. Through innovation and exceptional customer service, we aim to simplify the process of renting a vehicle and make it a seamless part of your travel experience. 
+            </font>
+        </div>
+        <div class="rightmission" align="center">
+                <img src="Asset/Image/car-rental1.jpg" alt="">
+                <br>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container1">
+        <div class="maps">
+            <div class="maps1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.1682412512396!2d72.82874567495244!3d18.968175855349116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce40efaddd4b%3A0x2bea536eb30cd8d0!2sM.H%20Saboo%20Siddik%20Polytechnic!5e0!3m2!1sen!2sin!4v1697279670625!5m2!1sen!2sin" width="600" height="450" style="border:0;"></iframe>
+            </div>
+            <div class="texts">
+                <font id="head">
+                    We are Available 24x7
+                </font><br><br>
+                <font id="descrip">
+                    You don't need to search far and wide to find us; we know where you're headed. We have a presence that spans the map, ensuring that you can easily access our services wherever your journey takes you. Our commitment to convenience means you can find us when and where you need us the most. So, wherever you are, wherever you're going, you know where to look for us – your reliable partner in car rentals, just around the corner.
+                    <br><br><br>
+                    <a style="text-decoration: none; color: white;" href="#contact-form"><u>Conatct Us -></u></a>
+                </font>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature cards -->
+    <div class="features">
+        <div class="row">
+            <div class="col">
+                <center>
+                    <img src="Asset/Image/meter.png" alt=""><br><br>
+                    <font style="font-size: 23px;">
+                        Fast and Easy Booking 
+                    </font>
+                </center>
+                <br><hr color="grey" width="75%" style="height: 1px; border-radius: 10px;">
+                <p>
+                    Whether you're planning your trip or making a last-minute decision, our user-friendly platform allows you to secure your rental in just a few clicks
+                </p>
+            </div>
+            <div class="col">
+                <center>
+                    <img src="Asset/Image/steering-wheel.png" alt=""><br><br>
+                    <font style="font-size: 23px;">
+                        Fast and Easy Booking 
+                    </font>
+                </center>
+                <br><hr color="grey" width="75%" style="height: 1px; border-radius: 10px;">
+                <p>
+                    Whether you're planning your trip or making a last-minute decision, our user-friendly platform allows you to secure your rental in just a few clicks
+                </p>
+            </div>
+            <div class="col">
+                <center>
+                    <img src="Asset/Image/calendar.png" alt=""><br><br>
+                    <font style="font-size: 23px;">
+                        Fast and Easy Booking 
+                    </font>
+                </center>
+                <br><hr color="grey" width="75%" style="height: 1px; border-radius: 10px;">
+                <p>
+                    Whether you're planning your trip or making a last-minute decision, our user-friendly platform allows you to secure your rental in just a few clicks
+            </div>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="container2">
+        <h1>Our Team</h1>
+        <div class="team">
+            <div class="stud">
+                <center><img src="Asset/Image/p1.png" alt="">
+                    <br><br><hr color="white" width="75%" style="height: 1px; border-radius: 10px;">
+                    <h2>Chaitanya Amup</h2>
+                    <span>Student</span>
+                </center>
+            </div>
+            <div class="stud">
+                <center><img src="Asset/Image/p2.png" alt="">
+                    <br><br><hr color="white" width="75%" style="height: 1px; border-radius: 10px;">
+                    <h2>Umesh Phulare</h2>
+                    <span>Student</span>
+                </center>
+            </div>
+            <div class="stud">
+                <center><img src="Asset/Image/p3.png" alt="">
+                    <br><br><hr color="white" width="75%" style="height: 1px; border-radius: 10px;">
+                    <h2>Ansari Saif</h2>
+                    <span>Student</span>
+                </center>
+            </div>
+            <div class="stud">
+                <center><img src="Asset/Image/p4.png" alt="">
+                    <br><br><hr color="white" width="75%" style="height: 1px; border-radius: 10px;">
+                    <h2>Kader Luqman</h2>
+                    <span>Student</span>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature cards -->
+    <div class="contact">
+            <div class="contact-left">
+                <h1 style="font-size: 50px;">Contact Us</h1>
+                <p>
+                    <i class='bx bx-message-alt-detail'></i> officiallyrentaride@gmail.com <br>
+                    <i class='bx bx-phone'></i> 9876543210
+                </p>
+                <p>With a fleet of quality vehicles and unbeatable customer service, we're committed to ensuring your travel experience is not just hassle-free but truly exceptional. Whether you're exploring new destinations, embarking on a business venture, or simply hitting the open road for a weekend getaway, we provide the wheels that drive your desires.</p>
+            </div>
+            <div class="contact-right" id="contact-form">
+                <form method="POST" name="submit-to-google-sheet" >
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required >
+                    <input type="email" id="em" name="Email" placeholder="Your Email" required >
+                    <textarea name="Message" id="msg" rows="6" placeholder="Your Message"></textarea><br>
+                    <button type="submit" id="butn" class="btn2" disabled>Submit</button>
+                </form>
+            </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <table>
+            <tbody>
+            <td><a href="#"><img src="Asset/Image/logo.png" class="logo" id="f_logo" style="height: 55px;margin-left: 10px;"></a></td>
+            <td><a href="#"><b>Copyright<i class='bx bx-copyright'></i> 2023-2024 Rent-A-Ride,Inc</b></a></td>
+            </tbody>
+        </table>
+        <ul>
+            <li><a href="#"><i class="fa fa-twitter" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-google" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a></li>
+        </ul>
+    </footer>
+    <div id="filterr">
+        <div id="container">
+            <div id="blurr"></div>
+            <i class="fa fa-close" id="close" onclick="backk()"></i>
+            <div class="fill_cont">
+                <div class="fill_controls">
+                    <input type="text" id="name1" name="Name" placeholder="Car Name" onkeyup="filterFunction()">
+                    <select id="fselect" onchange="myfunction()">
+                        <option value="0">Car Name</option>
+                        <option value="1">Location</option>
+                        <option value="2">Car Type</option>
+                    </select>
+                </div>
+                <div class="rowd" id="rowd">    
+                    <div class="colsd" onmouseenter="me('c1')" onmouseleave="ml('c1')">
+                        <a href="../Sub_Cat/shellbgt650.html">
+                        <img src="../Category/IMG/ford1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c1" class="Car Name">Ford Mustang Shelby</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c2')" onmouseleave="ml('c2')">
+                        <a href="../Sub_cat/innova.html">
+                        <img src="../Category/IMG/innova2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c2" class="Car Name">Innova Zenix</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c3')" onmouseleave="ml('c3')">
+                        <a href="../Sub_cat/gtrs.html">
+                        <img src="../Category/IMG/gtr2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c3" class="Car Name">Nissan GTR</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c4')" onmouseleave="ml('c4')">
+                        <a href="../Sub_cat/porsche911.html">
+                        <img src="../Category/IMG/porche1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c4" class="Car Name"> Porche 911</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c5')" onmouseleave="ml('c5')">
+                        <a href="../Sub_cat/supra.html">
+                        <img src="../Category/IMG/supra1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c5" class="Car Name">Toyota Supra</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                        
+                    </div>
+                    <div class="colsd" onmouseenter="me('c6')" onmouseleave="ml('c6')">
+                        <a href="../Sub_cat/a8.html">
+                        <img src="../Category/IMG/audi1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c6" class="Car Name">Audi A8</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c7')" onmouseleave="ml('c7')">
+                        <a href="../Sub_cat/m4.html">
+                        <img src="../Category/IMG/bmw1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c7" class="Car Name">BMW M4</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c8')" onmouseleave="ml('c8')">
+                        <a href="../Sub_cat/divo.html">
+                        <img src="../Category/IMG/bugatidivo1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c8" class="Car Name">Bugati Divo</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c9')" onmouseleave="ml('c9')">
+                        <a href="../Sub_cat/corvette.html">
+                        <img src="../Category/IMG/chervolet1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c9" class="Car Name">Chervolet Corvette</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c10')" onmouseleave="ml('c10')">
+                        <a href="../Sub_cat/civic.html">
+                        <img src="../Category/IMG/civic2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c10" class="Car Name">Honda Civic</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c11')" onmouseleave="ml('c11')">
+                        <a href="../Sub_cat/challenger.html">
+                        <img src="../Category/IMG/dodge1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c11" class="Car Name">Dodge Challenger</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c12')" onmouseleave="ml('c12')">
+                        <a href="../Sub_cat/duster.html">
+                        <img src="../Category/IMG/duster1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c12" class="Car Name">Renault Duster</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c13')" onmouseleave="ml('c13')">
+                        <a href="../Sub_cat/fortuner.html">
+                        <img src="../Category/IMG/fortuner1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c13" class="Car Name">Toyota Fortuner</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c14')" onmouseleave="ml('c14')">
+                        <a href="../Sub_cat/lc500.html">
+                        <img src="../Category/IMG/lexus1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c14" class="Car Name">Lexus LC 500</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c15')" onmouseleave="ml('c15')">
+                        <a href="../Sub_cat/urus.html">
+                        <img src="../Category/IMG/lombor2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c15" class="Car Name">Lomborghini Urus</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c16')" onmouseleave="ml('c16')">
+                        <a href="../Sub_cat/eclass.html">
+                        <img src="../Category/IMG/mercedesec.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c16" class="Car Name">Mercedes E-Class</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c17')" onmouseleave="ml('c17')">
+                        <a href="../Sub_cat/phantom.html">
+                        <img src="../Category/IMG/roll2.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c17" class="Car Name">Rolls Royce Phantom</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c18')" onmouseleave="ml('c18')">
+                        <a href="../Sub_cat/thar.html">
+                        <img src="../Category/IMG/thar1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c18" class="Car Name">Thar 4x4</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c19')" onmouseleave="ml('c19')">
+                        <a href="../Sub_cat/swift.html">
+                        <img src="../Category/IMG/swift1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c19" class="Car Name">Suzuki Swift</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c20')" onmouseleave="ml('c20')">
+                        <a href="../Sub_cat/mustang1965.html">
+                        <img src="../Category/IMG/mustang1.jpg" alt=""></a>
+                        <font style="font-size: 19px;" id="c20" class="Car Name">Ford Mustang 1965</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

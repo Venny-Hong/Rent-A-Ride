@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+#blurr{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    z-index: 13;
+    opacity: 80%;
+}
+
+.rowd{
+    /* margin-top: 5%; */
+    z-index: 15;
+    /* border-radius: 20px; */
+    height: 80%;
+    padding: 3%;
+    display: grid;
+    /* justify-content: space-between;
+    gap: 30px; */
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 30px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.662) 0px 5px 15px 0px; */
+    overflow: scroll;
+    overflow-x: hidden;
+    
+    /* border-radius: 30px; */
+
+    }
+    .colsd{
+        border: 1px solid;
+        width: 15vw;
+        background-color: rgb(243, 244, 244);
+        height: 32vh;
+        box-shadow: rgba(0, 0, 0, 0.474) 0px 5px 15px 0px;
+        border-radius: 20px;
+        border: 1px solid;
+        overflow: hidden;
+    }
+    .colsd:hover{
+        transition: all 0.2s;
+        box-shadow: rgba(255, 0, 0, 0.474) 0px 5px 15px 0px;   
+    }
+
+    .colsd img{ 
+        width: 100%;
+        height: 22vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .colsd font{
+        font-size: 15px;
+        font-family: 'Righteous',cursive;
+        margin: 13px;
+    }
+    .fill_cont{
+    z-index: 15;
+    /* border-radius: 20px; */
+    height: 80%;
+    width: 71%;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 0px 15px 0px;
+    background-color: rgb(255, 255, 255);
+    }
+    .fill_controls{
+        height: 10%;
+        background-color: rgb(255, 255, 255);
+        /* border-bottom: 1px solid black; */
+
+
+    }
+    input{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+    margin: 10px 0px 0px 30px;
+    color: rgb(16, 16, 16);
+    font-size: 18px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+select{
+    width: 13vw;
+    /* height: 4vh; */
+    padding: 5px;
+    margin: 6px 0px 0px 19px;
+    /* border: 1px black; */
+    border-radius: 11px;
+    font-size: 20px;
+    font-family: 'Righteous';
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+select option{
+    padding: 26px;
+    margin: 10px;
+    /* font-style: bold; */
+    font-size: 18px;
+    /* background-color: red; */
+    font-family: 'Righteous';
+    
+}
+
+    </style>
+    <script>
+    // let rowd=document.getElementById("rowd");
+    // var cold;
+    // var index;
+    // var c;
+    function load()
+    {
+        var s = document.getElementById("fselect");
+        clname = s.options[s.selectedIndex].text;
+        alert(clname);
+    }
+    let clname;
+    function myfunction()
+    {
+        // rowd
+        var s = document.getElementById("fselect");
+        // cold = rowd.getElementsByClassName("colsd");
+        // alert(rowd.children[s.selectedIndex].children[7].innerHTML);
+        // alert(rowd.childElementCount);
+        // c=rowd.childElementCount;
+        clname = s.options[s.selectedIndex].text;
+        index=s.selectedIndex;
+        document.getElementById("name").placeholder=s.options[s.selectedIndex].text;
+        
+        
+    }
+    function me(c)
+    {
+    document.getElementById(c).style.color="gold";
+    document.getElementById(c).style.transition="all 0.3s";
+    }
+function ml(c)
+    {
+    document.getElementById(c).style.color="black";
+    document.getElementById(c).style.transition="all 0.3s";
+    }
+    // function filterFunction(){
+    // var input, filter, ul, li, a, i;
+    // input = document.getElementById("name");
+    // filter = input.value.toUpperCase();
+    // alert(rowd.childElementCount);
+    // div = document.getElementById("myDropdown");
+    // for(i=0;i<rowd.length;i++)
+    // {
+    // div = rowd.children[i];
+    // a = div.children[1];
+    // // alert(a.length);
+    // for (j = 0; j < a.length; j++) {
+    // txtValue = a[j].textContent || a[j].innerText;
+    // // alert(a[i].textContent);
+    // if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    //   a[j].style.display = "";
+    // } else {
+    //   a[j].style.display = "none";
+    // }
+    // }
+    // }
+// }
+
+    function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("name");
+    filter = input.value.toUpperCase();
+    // div = document.getElementById("myDropdown");
+    a = document.getElementsByClassName(clname);
+    // alert(a[0].parentElement.nodeName);
+    for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    // alert(a[i].textContent);
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].parentElement.style.display = "";
+    } else {
+      a[i].parentElement.style.display="none";
+    }
+    }
+    }
+
+
+
+    </script>
+</head>
+<body onload="load()">
+    <div id="filterr">
+        <div id="container">
+            <div id="blurr"></div>
+            <div class="fill_cont">
+                <div class="fill_controls">
+                    <input type="text" id="name" name="Name" placeholder="Car Name" onkeyup="filterFunction()">
+                    <select id="fselect" onchange="myfunction()">
+                        <option value="0">Car Name</option>
+                        <option value="1">Location</option>
+                        <option value="2">Car Type</option>
+                    </select>
+                </div>
+                <div class="rowd" id="rowd"> 
+                    <div class="colsd" onmouseenter="me('c1')" onmouseleave="ml('c1')">
+                        <img src="Sport/IMG/ford1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c1" class="Car Name">Ford Mustang Shelby</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c2')" onmouseleave="ml('c2')">
+                        <img src="Sport/IMG/innova2.jpg" alt="">
+                        <font style="font-size: 19px;" id="c2" class="Car Name">Innova Zenix</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c3')" onmouseleave="ml('c3')">
+                        <img src="Sport/IMG/gtr2.jpg" alt="">
+                        <font style="font-size: 19px;" id="c3" class="Car Name">Nissan GTR</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c4')" onmouseleave="ml('c4')">
+                        <img src="Sport/IMG/porche1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c4" class="Car Name"> Porche 911</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c5')" onmouseleave="ml('c5')">
+                        <img src="Sport/IMG/supra1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c5" class="Car Name">Toyota Supra</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c6')" onmouseleave="ml('c6')">
+                        <img src="Sport/IMG/audi1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c6" class="Car Name">Audi A8</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c7')" onmouseleave="ml('c7')">
+                        <img src="Sport/IMG/bmw1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c7" class="Car Name">BMW M4</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c8')" onmouseleave="ml('c8')">
+                        <img src="Sport/IMG/bugatidivo1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c8" class="Car Name">Bugati Divo</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sport</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c9')" onmouseleave="ml('c9')">
+                        <img src="Sport/IMG/chervolet1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c9" class="Car Name">Chervolet Corvette</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c10')" onmouseleave="ml('c10')">
+                        <img src="Sport/IMG/civic2.jpg" alt="">
+                        <font style="font-size: 19px;" id="c10" class="Car Name">Honda Civic</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c11')" onmouseleave="ml('c11')">
+                        <img src="Sport/IMG/dodge1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c11" class="Car Name">Dodge Challenger</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c12')" onmouseleave="ml('c12')">
+                        <img src="Sport/IMG/duster1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c12" class="Car Name">Renault Duster</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c13')" onmouseleave="ml('c13')">
+                        <img src="Sport/IMG/fortuner1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c13" class="Car Name">Toyota Fortuner</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c14')" onmouseleave="ml('c14')">
+                        <img src="Sport/IMG/lexus1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c14" class="Car Name">Lexus LC 500</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c15')" onmouseleave="ml('c15')">
+                        <img src="Sport/IMG/lombor2.jpg" alt="">
+                        <font style="font-size: 19px;"  id="c15" class="Car Name">Lomborghini Urus</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Pune</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c16')" onmouseleave="ml('c16')">
+                        <img src="Sport/IMG/mercedesec.jpg" alt="">
+                        <font style="font-size: 19px;" id="c16" class="Car Name">Mercedes E-Class</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c17')" onmouseleave="ml('c17')">
+                        <img src="Sport/IMG/roll2.jpg" alt="">
+                        <font style="font-size: 19px;" id="c17" class="Car Name">Rolls Royce Phantom</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Luxury</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Thane</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c18')" onmouseleave="ml('c18')">
+                        <img src="Sport/IMG/thar1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c18" class="Car Name">Thar 4x4</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">SUV</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Malad</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c19')" onmouseleave="ml('c19')">
+                        <img src="Sport/IMG/swift1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c19" class="Car Name">Suzuki Swift</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Sedan</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Kalyan</font>
+                    </div>
+                    <div class="colsd" onmouseenter="me('c20')" onmouseleave="ml('c20')">
+                        <img src="Sport/IMG/mustang1.jpg" alt="">
+                        <font style="font-size: 19px;" id="c20" class="Car Name">Ford Mustang 1965</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Type : </font><font class="Car Type">Muscle</font><br>
+                        <font style="color: rgb(82, 82, 82); margin-right: -10px;">Location : </font><font class="Location">Mumbai</font>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

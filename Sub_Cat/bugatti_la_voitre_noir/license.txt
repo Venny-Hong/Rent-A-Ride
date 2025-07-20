@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bugatti La Voitre Noir
+* source:	https://sketchfab.com/3d-models/bugatti-la-voitre-noir-1464920d6d23472394d8e6497e563aac
+* author:	Casacade Models (https://sketchfab.com/CasacadeOperations)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bugatti La Voitre Noir" (https://sketchfab.com/3d-models/bugatti-la-voitre-noir-1464920d6d23472394d8e6497e563aac) by Casacade Models (https://sketchfab.com/CasacadeOperations) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

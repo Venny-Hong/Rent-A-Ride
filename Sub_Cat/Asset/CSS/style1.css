@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+}
+.navigation-bar{
+    padding: 0% 7%;
+    /* margin: -10px; */
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+.navigation-bar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation-bar nav ul li{
+    display: inline-block;
+    /* display: inline-flex;   Does the same thing */
+    list-style: none;
+    margin:2px 20px;
+    font-family: 'Righteous';
+}
+.navigation-bar nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    position: relative;
+}
+.navigation-bar nav ul li a::after{
+    content:'';
+    background-color: #ffffff;
+    width: 0;
+    height:3px;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.4s ease-in-out;
+}
+.navigation-bar nav ul li a:hover::after{
+    width:100%;
+}
+#search-box{
+    height: 35px;
+    border-radius: 25px;
+    width: 200px;
+    border-width: 1px;
+    padding-left: 15px;
+    outline: none;
+    background-color: aliceblue;
+}
+/* -------main video section----- */
+/* .bg-video{
+    background:url(/Asset/Image/main.mp4);
+} */
+
+/*--------intro section------- */
+.model-3d{
+    height: 370px;
+    /* padding: 8% 10; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.709);
+    border-radius: 10px;
+  }
+.leftside{
+    flex-basis: 50%;
+}
+.rightside{
+    /* margin-top: -10px; */
+    margin-right: -20px;
+    padding-bottom: 10%;
+    flex-basis: 50%;
+    overflow: visible;
+    /* background-color: aliceblue; */
+}
+.home_vid 
+    {
+        text-align: center;
+        background: black;
+    }
+/* home page video */
+video {
+    width: 95%;
+    height: 10%;
+  }
+
+model-viewer{
+    width: 550px;
+    height: 350px;
+    overflow: visible;
+}
+/* -----latest-cars----- */
+
+.latest-cars{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 45px;
+    /* margin-top: 50px; */
+    padding: 0 5%;
+    /* background-color: chocolate; */
+}
+.cars{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.cars img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.4s;
+}
+/* .animate1{
+    width: 100%;
+    height: 0;
+    /* background: linear-gradient(rgba(245, 245, 245, 0.6), #181816); 
+    background-color: rgba(169, 169, 169, 0.671);
+    border-radius: 10px;
+    position: absolute;
+    /* left: 0; 
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0  10px;
+    text-align: center;
+    transition: height 0.5s;
+} */
+.animate{
+    background-color: rgba(169, 169, 169, 0.671);
+    width:100%;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transition: height 0.5s;
+    position: absolute ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0px 10px -10px;
+}
+.cars:hover img{
+    transform: scale(1.1);
+}
+.cars:hover .animate{
+    height: 100%;
+}
+.cars:hover .animate1{
+    height: 100%;
+}
+/* -----footer------ */
+footer{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000000ea;
+    padding: 10px 0;
+    margin: 0 -10px -10px -10px;
+    font-size: 14px;
+}

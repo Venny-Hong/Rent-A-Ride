@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Calculation</title>
+</head>
+<body>
+    <label for="start-date">Enter a date:</label>
+    <input type="date" id="start-date" required>
+    
+    <button id="calculate-button">Add 5 Days</button>
+    
+    <label for="end-date">Select a date (up to 5 days from the start date):</label>
+    <input type="date" id="end-date" required>
+
+    <script>
+        document.getElementById('calculate-button').addEventListener('click', function() {
+            var startDateInput = document.getElementById('start-date');
+            var endDateInput = document.getElementById('end-date');
+
+            var startDate = new Date(startDateInput.value);
+            if (isNaN(startDate)) {
+                alert("Invalid start date. Please enter a valid date.");
+                return;
+            }
+
+            startDate.setDate(startDate.getDate() + 5);
+
+            var maxDate = startDate.toISOString().split('T')[0];
+            endDateInput.max = maxDate;
+        });
+        document.write(parseInt("40₹/KM"))
+    </script>
+</body>
+</html>

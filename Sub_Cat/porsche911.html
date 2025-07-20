@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <link rel="stylesheet" href="Asset/CSS/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="Asset/JS/book.js" defer></script>
+        <title>Rent-A-Ride</title>
+    </head>
+    <body onload="sub_cat()">
+        <div class="navigation-bar">
+            <nav>
+               <a href="../index.html"><img src="Asset/Image/logo.png" class="logo" id="logoup"></a>
+                <ul id="sidemenu">
+                    <li><a href="../index.html" onclick="closemenu()">Home</a></li>
+                    <li><a href="../About_us/about.html" onclick="closemenu()">About</a></li>
+                    <li><a href="../Category/category.html" onclick="closemenu()">Categories</a></li>
+                    <li><a href="#" onclick="log()" id="lr" onclick="closemenu()">Login/Register</a></li>
+                    <i class='bx bx-message-square-x' id="close" onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' id="open" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+        <!-- start -->
+        <div id="car_name_tag">
+            <center> 
+                   Porsche 911
+            </center>
+        </div>
+
+        <!-- leftside? -->
+        <div class="leftside" align="center">
+            <div class="consdiv">
+                <model-viewer src="Asset/Image/porsche_911_c4s_2020_aerokit/scene.gltf" alt="3D model loading Failed" shadow-softness="1" shadow-intensity="4" camera-orbit="90deg 88deg 60%" auto-rotate camera-controls ar ios-src="Asset/Image/Car2/scene.gltf">
+                </model-viewer><br>
+            <button class="button" id="button" onclick="openForm()">Book This Car Now</button>
+            </div>
+        </div>
+
+        <!-- model main tag -->
+        <div class="model-3d">
+            <div class="l2"></div>
+            <div class="rightside">
+                <div class="spec">
+                <font>
+                    The 2020 Porsche 911 Carrera 4S (C4S) is a high-performance sports car known for its iconic design, impressive handling, and powerful engine. As part of the Porsche 911 lineup, the Carrera 4S offers all-wheel drive (hence the "4" in its name) and is available in both coupe and convertible body styles.
+                </font>
+                <br> <br><hr>
+                <table align="center">
+                    <tr>
+                    <td><center><img src="Asset/Image/price.png" width="80" height="80"></center></td>
+                    <td><font style="font-family: 'Lobster', cursive; font-size: 20px;"> &nbsp; Price- &nbsp;</font></td>
+                    <td><font style="font-family: 'Lobster', cursive; font-size: 20px;">52₹/km</font></td>
+                    </tr>
+                </table>
+                <hr>
+                    <font id="specification">
+                        Specifications
+                </font><br><br>
+                <table align="center" style="width:90%">
+                    <tr>
+                    <td><img src="Asset/Image/myear.png" width="50" height="50"></td>
+                    <td>Model Year</td>
+                    <td>2020</td>
+                    <td><img src="Asset/Image/pressure-indicator_62848.png" width="50" height="50"></td>
+                    <td>Mileage</td>
+                    <td>9.0 kmpl</td>
+                    </tr>
+                    <tr>
+                    <td><img src="Asset/Image/engine.png" width="50" height="50"></td>
+                    <td>Engine</td>
+                    <td>3996cc </td>
+                    <td><img src="Asset/Image/airbag.png" width="50" height="50"></td>
+                    <td>AirBags</td>
+                    <td>6</td>
+                    </tr>
+                    <tr>
+                    <td> <img src="Asset/Image/gearbox-icon.jpg" width="50" height="50"></td>
+                    <td>Gear</td>
+                    <td>6 Gears Automatic</td>
+                    <td> <img src="Asset/Image/seat.png" width="50" height="50"></td>
+                    <td>Seats</td>
+                    <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Asset/Image/fuel.png" width="50" height="50"></td>
+                        <td>Fuel</td>
+                        <td>Petrol</td>
+                        <td><img src="Asset/Image/boot.png" width="50" height="50"></td>
+                        <td>BootSpace</td>
+                        <td>128L</td>
+                    </tr>
+                </table>
+                </div>
+                <!-- Inspection report -->
+                <div class="report">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>We aim to provide our customers with a reliable drive. Every car we sell is refurbished by experts at our Mega Refurbishment Labs.</td>
+                                <td><hr style="height: 100px; width: 2px;"></td>
+                                <td><center><img src="Asset/Image/nonacci.jpeg" width="50" height="45"> <br> Non Accidental</center></td>
+                                <td><center><img src="Asset/Image/nontemp.png" width="40" height="45"> <br> Non Tempered</td>
+                                <td><center><img src="Asset/Image/nonflood.jpeg" width="55" height="50"> <br> Non Flooded</center></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="r1">
+                        <table>
+                            <tr>
+                                <td><img src="Asset/Image/tick.png" width="30" height="30"></td>
+                                <td style="width: 75%;"> <font style="font-family: 'Righteous', cursive;"> No Imperfections </font></td>
+                            </tr>
+                        </table>
+                        The car has no imperfection, and it has been thoroughly tested.
+                    </div>
+                    <br>
+                    <div class="r1">
+                        <table>
+                            <tr>
+                                <td><img src="Asset/Image/tick.png" width="30" height="30"></td>
+                                <td style="width: 75%;"> <font style="font-family: 'Righteous', cursive;"> Perfect Parts </font></td>
+                            </tr>
+                        </table>
+                        Thoroughly tested and ready for the road as per RENT A RIDE Quality Promise
+                    </div>
+                    <br>
+                    <div class="r1">
+                        <table>
+                            <tr>
+                                <td><img src="Asset/Image/tick.png" width="30" height="30"></td>
+                                <td style="width: 75%;"> <font style="font-family: 'Righteous', cursive;"> Non Accidental </font></td>
+                            </tr>
+                        </table>
+                        Non Accidental or Flooded Car. Ready To Ride.
+                    </div>
+                    <br>
+                    <div class="r1">
+                        <table>
+                            <tr>
+                                <td><img src="Asset/Image/wheel.png" width="30" height="30"> <br></td>
+                                <td style="width: 75%;"> <font style="font-family: 'Righteous', cursive;"> Tyres (Life Remaining) </font></td>
+                            </tr>
+                        </table>
+                        Front: 84%,86% &nbsp; Rear: 89%,91% &nbsp; Spare: 96%
+                    </div>
+
+                </div>
+
+            </div>
+           
+        </div>
+        
+       
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+     <!-- Footer -->
+     <footer>
+        <table>
+            <tbody>
+            <td><a href="#"><img src="Asset/Image/logo.png" class="logo" id="f_logo" style="height: 55px;margin-left: 10px;"></a></td>
+            <td><center><a href="#"><b>Copyright<i class='bx bx-copyright'></i> 2023-2024 Rent-A-Ride,Inc</b></a></center></td>
+            </tbody>
+        </table>
+        <ul>
+            <li><a href="#"><i class="fa fa-twitter" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-google" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" style="font-size: 22px;"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a></li>
+        </ul>
+    </footer>
+
+        <div class="form-popup" id="myForm" >
+            <i class="fa fa-close" id="cancel" onclick="cancel1()"></i>
+            <form class="form-container" style="background-image: url('Asset/Image/bg.jpg'); background-size: cover;">
+                <center> <font style="font-family: 'Lobster', cursive; font-size: 60px; color: aliceblue;">
+                    BOOKING
+                </font><br>
+                <input type="text" placeholder="Enter Your Name" class="booking" required id="name1"><input type="text" required placeholder="Enter Your Contact No." class="booking" id="number1"> 
+                <input type="text" placeholder="Enter Your License No." class="lno" required id="lno">&nbsp;&nbsp;<input type="text" placeholder="Enter Your Aadhar Card No." required class="lno" id="ano"><br>
+                <font style="font-family: 'Lobster', cursive; font-size: 30px; color: aliceblue;">From:&nbsp;<input type="date" id="from" onclick="Validate()" onchange="Validate1()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Till :&nbsp;<input type="date" id="To"></font>
+                <br><input type="number" class="km" placeholder="No. Of KM" id="km" oninput="total1()" min="50"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="km" placeholder="Price/KM" id="price" value="52₹/KM">
+                <br><input type="text" class="km" placeholder="Car Name" required id="car-name" value="Porsche 911" disabled="true"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" class="km" placeholder="Total" id="total"> <br>
+            <button type="button" class="button1" onclick="closeForm()">Confirm Your Booking</button></center>
+            </form>
+        </div>
+
+</body>
+</html>
